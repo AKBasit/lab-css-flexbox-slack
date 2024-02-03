@@ -1,10 +1,99 @@
 /*
-background purple: #540B51
-background ivory: #F3EAE2
-button blue: #4285F4
-titles black: #191817
-paragraph black: #000000
-paragraph yellow: #ECB12F
-links blue: #2E71A6
-footer links grey: #454245
+background-grey: #F4F3F4;
+button-purple: #192592
+main-titles dark-grey: #2C303F;
+paragraph grey: #5b5e6d;
+nav grey: #5b5e6d;
 */
+
+/* General */
+
+p,
+span {
+  font-size: 1.2em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #5b5e6d;
+  line-height: 150%;
+}
+
+li {
+  font-size: 1.2em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #5b5e6d;
+  line-height: 135%;
+}
+
+hr {
+  border-top: 1px solid #e2e0e0;
+}
+
+@media (max-width: 767px) {
+  nav {
+    box-shadow: 0px 1px 3px 0px #d2d2d2;
+    background-color: white;
+    width: 100vw;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+  }
+
+  .top-menu {
+    display: flex;
+    width: 90vw;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  /* Logo */
+  nav img {
+    height: 5.5em;
+  }
+
+  /* Burger*/
+
+  .burger {
+    display: flex;
+    font-size: 2em;
+    color: #5b5e6d;
+  }
+
+  /* Menu */
+
+  nav ul {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 5em auto;
+  }
+
+  .introduction-image {
+    order: 2;
+  }
+
+  header img {
+    width: 100%;
+    display: flex;
+  }
+
+  header h1 {
+    font-size: 3em;
+    display: flex;
+    /* font-family: 'Segoe UI', Tahoma, sans-serif; */
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-weight: 800;
+    margin: 0.8em 0;
+  }
+
+  header p {
+    display: flex;
+  }
+
+  .register {
+    display: flex;
+    flex-direction: column;
+  }
